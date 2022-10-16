@@ -16,7 +16,7 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     font-size: 34px;
-    color: block;
+    color: black;
     font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -59,7 +59,7 @@ li {
 
 /* divの不要な空白を削除 */
 div {
-    font-size: 0px;
+    font-size: 0;
 }
 
 /* メイン画像 */
@@ -98,4 +98,41 @@ img {
 .content {
     margin: 0 auto;
     padding-left: 40px;
+}
+
+/* Works */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+
+/* Worksの画像と説明部分 */
+.item {
+    padding-bottom: 60px;
+    width: 25%;
+}
+
+/* Worksの画像と説明部分（2個目) */
+.item_center {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* フッター */
+footer p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+    .item {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
 }
